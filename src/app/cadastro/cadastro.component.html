@@ -1,0 +1,11 @@
+<h2>Cadastre seu produto a seguir</h2>
+<form [formGroup] = "formCadastro" (submit)="fazerCadastro()">
+    <p>Digite o nome</p>
+    <input type="text" formControlname="nome"> 
+    <p>Digite o preco</p>
+    <input type="number" formControlname="preco">
+    <p>Digite a descricao</p>
+    <textarea formControlname="descricao"></textarea>
+    <br>
+    <button>Enviar</button>
+</form>
